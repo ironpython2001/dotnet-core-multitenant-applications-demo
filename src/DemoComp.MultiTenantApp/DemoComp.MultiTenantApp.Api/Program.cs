@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMultiTenant<TenantInfo>()
-    .WithHeaderStrategy()
+    .WithHeaderStrategy("tenant")
     .WithConfigurationStore();
     
 
@@ -22,9 +22,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseMultiTenant();
-app.UseHttpsRedirection();
 
+app.UseHttpsRedirection();
+app.UseMultiTenant();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -15,8 +15,8 @@ namespace DemoComp.MultiTenantApp.Api.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetTenantInfo")]
-        public TenantInfo? Get()
+        [HttpGet]
+        public TenantInfo? GetTenantInfo()
         {
             var tenantInfo = HttpContext.GetMultiTenantContext<TenantInfo>()?.TenantInfo;
             if (tenantInfo is not null)

@@ -6,7 +6,9 @@ steps to run the application
 1. from cmd navigate to "DemoComp.MultiTenantApp.Api" project directory
 2. at cmd execute the command "dotnet build"
 3. at cmd execute the command "dotnet run --launch-profile https."
-
+4. at cmd
+curl --location 'https://localhost:7147/Tenant' \
+--header 'tenant: megacorp'
 
 reference URLs:
 

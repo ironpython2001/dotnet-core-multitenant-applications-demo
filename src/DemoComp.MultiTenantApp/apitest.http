@@ -1,0 +1,9 @@
+
+
+
+@hostname=localhost
+@port=7147
+@host={{hostname}}:{{port}}
+GET https://{{host}}/Tenant
+
+header 'tenant: megacorp'

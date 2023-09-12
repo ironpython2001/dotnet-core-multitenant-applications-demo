@@ -20,6 +20,7 @@ reference URLs:
 6. https://www.finbuckle.com/MultiTenant
 7. https://github.com/Finbuckle/Finbuckle.MultiTenant/blob/main/samples/net6.0/BasePathStrategySample/appsettings.json
 
+<<<<<<< Updated upstream
 EF Core multitenancy
 https://learn.microsoft.com/en-us/ef/core/miscellaneous/multitenancy
 https://blog.jetbrains.com/dotnet/2022/06/22/multi-tenant-apps-with-ef-core-and-asp-net-core/
@@ -30,4 +31,7 @@ https://www.codingame.com/playgrounds/5518/multi-tenant-asp-net-core-5---impleme
 https://github.com/Oriflame/EFCoreMultitenantSample
 https://www.finbuckle.com/MultiTenant/Docs/v6.12.0/EFCore
 https://www.carlrippon.com/creating-an-aspnetcore-multi-tenant-web-api-with-dapper-and-sql-rls/
+=======
+help:
+>>>>>>> Stashed changes
 

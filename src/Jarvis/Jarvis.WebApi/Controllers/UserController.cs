@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Jarvis.Utils;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Jarvis.WebApi.Controllers;
 
@@ -29,32 +30,21 @@ public class UsersController : ControllerBase
     [HttpPost("authenticate")]
     public async Task<IActionResult> Authenticate(AuthenticateRequest model)
     {
-        //var response = _userService.Authenticate(model);
-        //if (response == null)
-        //{
-        //    return BadRequest(new { message = "Username or password is incorrect" });
-        //}
-        //else
-        //{
-        //    response.Token = _jwtUtils.GenerateJwtToken(response);
-        //}
-
-        //return Ok(response);
         ValidationResult result = await _validator.ValidateAsync(model);
-        if (result.IsValid == false)
+        if (result.IsValid is false)
         {
             var errors = result.ToDto();
-            return Problem();
+            return Unauthorized(errors);
         }
         var user = _userService.GetUser(model!.Username!, model!.Password!);
-        if(user == null) 
-        { 
-            return Problem();
+        if (user is null)
+        {
+            return Unauthorized();
         }
         else
         {
-            var token = _jwtUtils.GenerateJwtToken(user);
-            return Ok(token);
+            var response = new AuthenticateResponse(user, _jwtUtils.GenerateJwtToken(user));
+            return Ok(response);
         }
 
     }
@@ -66,6 +56,6 @@ public class UsersController : ControllerBase
         return Ok(users);
     }
 
-    
+
 
 }

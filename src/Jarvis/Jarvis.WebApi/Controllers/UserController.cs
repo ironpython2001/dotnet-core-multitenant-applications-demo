@@ -46,7 +46,6 @@ public class UsersController : ControllerBase
             var response = new AuthenticateResponse(user, _jwtUtils.GenerateJwtToken(user));
             return Ok(response);
         }
-
     }
 
     [HttpGet]

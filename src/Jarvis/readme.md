@@ -11,3 +11,6 @@ https://shahedbd.medium.com/net-7-web-api-jwt-authentication-and-role-based-auth
 
 JWT Authentication Configuration in Dotnet 7
 https://dottutorials.net/jwt-authentication-configuration-in-asp-net-7/
+
+Authentication And Authorization In .NET Core Web API Using JWT Token And Swagger UI
+https://www.c-sharpcorner.com/article/authentication-authorization-using-net-core-web-api-using-jwt-token-and/

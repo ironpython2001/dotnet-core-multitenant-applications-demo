@@ -27,7 +27,7 @@ public class UsersController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpPost("authenticate")]
+    [HttpPost("Authenticate")]
     public async Task<IActionResult> Authenticate(AuthenticateRequest model)
     {
         ValidationResult result = await _validator.ValidateAsync(model);

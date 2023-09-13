@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.WebApi", "Jarvis.WebApi\Jarvis.WebApi.csproj", "{FF876B27-2008-4790-B050-9C4EEB2FCBED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{12460F35-A1E6-4D9D-BA29-21D6E7BB853A}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.DTOs", "Jarvis.DTOs\Jarvis.DTOs.csproj", "{45A546BA-3C34-48A0-AB37-7DF56208C6D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.Services", "Jarvis.Services\Jarvis.Services.csproj", "{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.DTOValidations", "Jarvis.DTOValidations\Jarvis.DTOValidations.csproj", "{53E2EA24-98FB-499E-A60A-715097330671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.Utils", "Jarvis.Utils\Jarvis.Utils.csproj", "{69D15F33-ED2E-43F1-A837-15A79E7E89ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF876B27-2008-4790-B050-9C4EEB2FCBED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF876B27-2008-4790-B050-9C4EEB2FCBED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF876B27-2008-4790-B050-9C4EEB2FCBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF876B27-2008-4790-B050-9C4EEB2FCBED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A546BA-3C34-48A0-AB37-7DF56208C6D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A546BA-3C34-48A0-AB37-7DF56208C6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A546BA-3C34-48A0-AB37-7DF56208C6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A546BA-3C34-48A0-AB37-7DF56208C6D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E2EA24-98FB-499E-A60A-715097330671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E2EA24-98FB-499E-A60A-715097330671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E2EA24-98FB-499E-A60A-715097330671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E2EA24-98FB-499E-A60A-715097330671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D15F33-ED2E-43F1-A837-15A79E7E89ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D15F33-ED2E-43F1-A837-15A79E7E89ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D15F33-ED2E-43F1-A837-15A79E7E89ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D15F33-ED2E-43F1-A837-15A79E7E89ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E38CD9D3-59CB-4C62-A22A-DC18C5D1BE08}
+	EndGlobalSection
+EndGlobal

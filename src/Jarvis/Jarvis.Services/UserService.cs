@@ -1,4 +1,6 @@
 ﻿using Jarvis.DTOs;
+using Microsoft.Extensions.Logging;
+using Jarvis.Utils;
 
 namespace Jarvis.Services;
 
@@ -10,12 +12,12 @@ public class UserService : IUserService
         new User { Id = 1, FirstName = "Test", LastName = "User", Username = "test", Password = "test" }
     };
 
-    //private readonly IJwtUtils _jwtUtils;
+    private readonly ILogger<UserService> _logger;
 
-    //public UserService(IJwtUtils jwtUtils)
-    //{
-    //    _jwtUtils = jwtUtils;
-    //}
+    public UserService(ILogger<UserService> logger)
+    {
+        _logger = logger;   
+    }
 
     //public AuthenticateResponse? Authenticate(AuthenticateRequest model)
     //{
@@ -32,6 +34,7 @@ public class UserService : IUserService
 
     public User GetUser(string username, string password)
     {
+        _logger.MyLogMessage(LogLevel.Information, "adfasdfadsfasd");
         var user = _users.SingleOrDefault(x => x.Username == username && x.Password == password);
 
         // return null if user not found

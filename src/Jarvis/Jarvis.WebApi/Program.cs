@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpLogging(httpLogging =>
 {
     //TODO: NEED TO CUSTOMIZE THIS BASED ON THE NEEDS
-    httpLogging.LoggingFields = HttpLoggingFields.All; 
+    httpLogging.LoggingFields = HttpLoggingFields.RequestPath; 
     //httpLogging.RequestHeaders.Add("Request-Header-Demo");
     //httpLogging.ResponseHeaders.Add("Response-Header-Demo");
     //httpLogging.MediaTypeOptions.AddText("application/javascript");
@@ -27,11 +27,11 @@ builder.Services.AddSerilog(lc=>
     lc.MinimumLevel.Debug()
     .WriteTo.Console()
     //.WriteTo.File(path: builder.Configuration["LogInformation:path"], outputTemplate: builder.Configuration["LogInformation:outputTemplate"], retainedFileCountLimit: 10, rollingInterval: RollingInterval.Day)
-    .Enrich.FromLogContext();
+    .Enrich.FromLogContext()
     //.Enrich.WithMachineName()
-    //.Enrich.WithCorrelationId();
+    .Enrich.WithCorrelationId();
 });
-
+builder.Services.AddHttpContextAccessor();
 // Add services to the container.
 builder.Services.AddCors();
 builder.Services.AddControllers();

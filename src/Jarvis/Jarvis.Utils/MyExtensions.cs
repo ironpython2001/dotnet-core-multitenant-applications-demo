@@ -1,5 +1,7 @@
 ﻿using FluentValidation.Results;
 using Jarvis.DTOs;
+using Microsoft.Extensions.Logging;
+using System.Runtime.CompilerServices;
 
 namespace Jarvis.Utils;
 
@@ -17,6 +19,14 @@ public static class MyExtensions
         }
         else
             return null;
+    }
+
+    public static void MyLogMessage(this ILogger myLogger, LogLevel logLevel, string message,
+        [CallerMemberName] string memberName = "",
+        [CallerFilePath] string sourceFilePath = "",
+        [CallerLineNumber] int sourceLineNumber = 0)
+    {
+        myLogger.Log(logLevel, $"{memberName},{sourceFilePath},{sourceLineNumber},{message}");
     }
 
 }

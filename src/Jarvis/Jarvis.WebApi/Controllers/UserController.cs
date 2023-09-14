@@ -4,6 +4,8 @@ using Jarvis.DTOs;
 using Jarvis.Services;
 using Jarvis.Utils;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 namespace Jarvis.WebApi.Controllers;
 
@@ -15,9 +17,15 @@ public class UsersController : ControllerBase
     private IValidator<AuthenticateRequest> _validator;
     private IUserService _userService;
     private readonly IJwtUtils _jwtUtils;
+    private readonly ILogger<UsersController> _logger;
 
-    public UsersController(IValidator<AuthenticateRequest> validator, IUserService userService, IJwtUtils jwtUtils)
+    public UsersController(
+        ILogger<UsersController> logger,
+        IValidator<AuthenticateRequest> validator,
+        IUserService userService,
+        IJwtUtils jwtUtils)
     {
+        _logger = logger;
         _validator = validator;
         _userService = userService;
         _jwtUtils = jwtUtils;
@@ -49,10 +57,8 @@ public class UsersController : ControllerBase
     [Authorize]
     public IActionResult GetAll()
     {
+        _logger.MyLogMessage(LogLevel.Information, "GetAllUsers");
         var users = _userService.GetAll();
         return Ok(users);
     }
-
-
-
 }

@@ -2,7 +2,7 @@
 
 public record ValidationError
 {
-    
+
     public string? ErrorCode { get; init; }
     public string? ErrorMessage { get; init; }
     public string? PropertyName { get; init; }

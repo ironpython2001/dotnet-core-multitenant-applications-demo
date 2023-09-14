@@ -1,3 +1,15 @@
+Requirements:
+
+visual studio 2022 with .net 7
+
+steps to run the application
+1. from cmd navigate to "Jarvis.WebApi" project directory
+2. at cmd execute the command "dotnet build"
+3. at cmd execute the command "dotnet run --launch-profile https"
+4. at cmd
+curl --location 'https://localhost:7147/Tenant' \
+--header 'tenant: megacorp'
+
 References:
 
 .NET 7.0 + C# - JWT Authentication Tutorial without ASP.NET Core Identity
@@ -17,3 +29,15 @@ https://www.c-sharpcorner.com/article/authentication-authorization-using-net-cor
 
 Configure Swagger to accept Header Authorization
 https://www.freecodespot.com/blog/use-jwt-bearer-authorization-in-swagger/
+
+Http Logging in .net 7
+https://www.learmoreseekmore.com/2021/12/dotnet6-http-logs-with-usehttplogging-middleware.html
+
+use serilog with httplogging
+https://stackoverflow.com/questions/63573551/how-to-add-request-body-in-serilogs-output-net-core
+
+How to log Correlation IDs in .NET APIs with Serilog
+https://www.code4it.dev/blog/serilog-correlation-id/
+
+Easy ASP.NET log correlation with Serilog and Seq
+https://nblumhardt.com/2014/02/easy-asp-net-log-correlation/

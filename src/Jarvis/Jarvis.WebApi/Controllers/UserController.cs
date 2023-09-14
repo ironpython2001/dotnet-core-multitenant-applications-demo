@@ -2,11 +2,8 @@
 using FluentValidation.Results;
 using Jarvis.DTOs;
 using Jarvis.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using System;
 using Jarvis.Utils;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Jarvis.WebApi.Controllers;
 
@@ -49,6 +46,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize]
     public IActionResult GetAll()
     {
         var users = _userService.GetAll();

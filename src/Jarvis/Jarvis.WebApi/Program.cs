@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpLogging(httpLogging =>
 {
     //TODO: NEED TO CUSTOMIZE THIS BASED ON THE NEEDS
-    httpLogging.LoggingFields = HttpLoggingFields.RequestPath; 
+    httpLogging.LoggingFields = HttpLoggingFields.All;
     //httpLogging.RequestHeaders.Add("Request-Header-Demo");
     //httpLogging.ResponseHeaders.Add("Response-Header-Demo");
     //httpLogging.MediaTypeOptions.AddText("application/javascript");
@@ -32,6 +32,9 @@ builder.Services.AddSerilog(lc=>
     .Enrich.WithCorrelationId();
 });
 builder.Services.AddHttpContextAccessor();
+//builder.Services.AddHeaderPropagation(options => options.Headers.Add("jarviscorrelationid"));
+//builder.Services.AddHttpClient().AddHeaderPropagation();
+
 // Add services to the container.
 builder.Services.AddCors();
 builder.Services.AddControllers();
@@ -78,8 +81,9 @@ builder.Services.AddScoped<IUserService, UserService>();
 
 
 var app = builder.Build();
-
+//app.UseHeaderPropagation();
 app.UseHttpLogging();
+
 app.UseSerilogRequestLogging();
 
 // Configure the HTTP request pipeline.

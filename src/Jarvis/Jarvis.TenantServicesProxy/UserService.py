@@ -23,8 +23,10 @@ class UserService(IUserService):
             #return clr.Convert(u, Type.GetType('User'))
         else:
             return None;
+
     def GetAll(self):
         pass
+    
     def GetById(self,i):
         pass
 

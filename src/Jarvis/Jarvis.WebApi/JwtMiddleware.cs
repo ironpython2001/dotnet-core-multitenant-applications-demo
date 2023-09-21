@@ -1,4 +1,5 @@
-﻿using Jarvis.Services;
+﻿using Jarvis.Tenant.BluePrints;
+using Jarvis.TenantServicesProxy;
 
 namespace Jarvis.WebApi;
 

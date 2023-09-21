@@ -1,7 +1,8 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 using Jarvis.DTOs;
-using Jarvis.Services;
+using Jarvis.Tenant.BluePrints;
+using Jarvis.TenantServicesProxy;
 using Jarvis.Utils;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -35,6 +36,7 @@ public class UsersController : ControllerBase
     [HttpPost("Authenticate")]
     public async Task<IActionResult> Authenticate(AuthenticateRequest model)
     {
+
         ValidationResult result = await _validator.ValidateAsync(model);
         if (result.IsValid is false)
         {

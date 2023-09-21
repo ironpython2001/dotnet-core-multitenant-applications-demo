@@ -1,7 +1,8 @@
 using FluentValidation;
 using Jarvis.DTOs;
 using Jarvis.DTOValidations;
-using Jarvis.Services;
+using Jarvis.Tenant.BluePrints;
+using Jarvis.TenantServicesProxy;
 using Jarvis.WebApi;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpLogging;

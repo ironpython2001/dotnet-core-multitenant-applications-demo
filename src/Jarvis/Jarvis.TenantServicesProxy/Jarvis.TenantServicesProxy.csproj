@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="IronPython" Version="3.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jarvis.DTOs\Jarvis.DTOs.csproj" />
+    <ProjectReference Include="..\Jarvis.SampleTenant1\Jarvis.SampleTenant1.csproj" />
+    <ProjectReference Include="..\Jarvis.Tenant.BluePrints\Jarvis.Tenant.BluePrints.csproj" />
+    <ProjectReference Include="..\Jarvis.Utils\Jarvis.Utils.csproj" />
+  </ItemGroup>
+</Project>

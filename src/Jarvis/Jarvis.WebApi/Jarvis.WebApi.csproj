@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -20,7 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Jarvis.DTOs\Jarvis.DTOs.csproj" />
     <ProjectReference Include="..\Jarvis.DTOValidations\Jarvis.DTOValidations.csproj" />
-    <ProjectReference Include="..\Jarvis.Services\Jarvis.Services.csproj" />
+    <ProjectReference Include="..\Jarvis.TenantServicesProxy\Jarvis.TenantServicesProxy.csproj" />
     <ProjectReference Include="..\Jarvis.Utils\Jarvis.Utils.csproj" />
   </ItemGroup>
 

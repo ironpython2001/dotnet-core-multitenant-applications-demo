@@ -3,26 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.WebApi", "Jarvis.WebApi\Jarvis.WebApi.csproj", "{FF876B27-2008-4790-B050-9C4EEB2FCBED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jarvis.WebApi", "Jarvis.WebApi\Jarvis.WebApi.csproj", "{FF876B27-2008-4790-B050-9C4EEB2FCBED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Docs", "00.Docs", "{12460F35-A1E6-4D9D-BA29-21D6E7BB853A}"
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.DTOs", "Jarvis.DTOs\Jarvis.DTOs.csproj", "{45A546BA-3C34-48A0-AB37-7DF56208C6D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jarvis.DTOs", "Jarvis.DTOs\Jarvis.DTOs.csproj", "{45A546BA-3C34-48A0-AB37-7DF56208C6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.Services", "Jarvis.Services\Jarvis.Services.csproj", "{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jarvis.Services", "Jarvis.Services\Jarvis.Services.csproj", "{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.DTOValidations", "Jarvis.DTOValidations\Jarvis.DTOValidations.csproj", "{53E2EA24-98FB-499E-A60A-715097330671}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jarvis.DTOValidations", "Jarvis.DTOValidations\Jarvis.DTOValidations.csproj", "{53E2EA24-98FB-499E-A60A-715097330671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.Utils", "Jarvis.Utils\Jarvis.Utils.csproj", "{69D15F33-ED2E-43F1-A837-15A79E7E89ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jarvis.Utils", "Jarvis.Utils\Jarvis.Utils.csproj", "{69D15F33-ED2E-43F1-A837-15A79E7E89ED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Api", "01.Api", "{142E7004-95A1-42B0-AA5C-8521EB7B2C95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Services", "02.Services", "{CC658EBC-F838-47D2-8276-186DB1697B6F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Common", "03.Common", "{39F33D54-F75B-40C4-9F7C-0E74FE9210D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jarvis.TenantServicesProxy", "Jarvis.TenantServicesProxy\Jarvis.TenantServicesProxy.csproj", "{43EFA1F8-319C-4C50-ADA8-A55EA3237DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.Tenant.BluePrints", "Jarvis.Tenant.BluePrints\Jarvis.Tenant.BluePrints.csproj", "{662CED03-7758-41D2-A26A-34444412EED1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jarvis.SampleTenant1", "Jarvis.SampleTenant1\Jarvis.SampleTenant1.csproj", "{1D9E54D3-527C-40D7-86DB-14FED6F61C73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +56,18 @@ Global
 		{69D15F33-ED2E-43F1-A837-15A79E7E89ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69D15F33-ED2E-43F1-A837-15A79E7E89ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69D15F33-ED2E-43F1-A837-15A79E7E89ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EFA1F8-319C-4C50-ADA8-A55EA3237DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EFA1F8-319C-4C50-ADA8-A55EA3237DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EFA1F8-319C-4C50-ADA8-A55EA3237DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EFA1F8-319C-4C50-ADA8-A55EA3237DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662CED03-7758-41D2-A26A-34444412EED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662CED03-7758-41D2-A26A-34444412EED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662CED03-7758-41D2-A26A-34444412EED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662CED03-7758-41D2-A26A-34444412EED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9E54D3-527C-40D7-86DB-14FED6F61C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9E54D3-527C-40D7-86DB-14FED6F61C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9E54D3-527C-40D7-86DB-14FED6F61C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9E54D3-527C-40D7-86DB-14FED6F61C73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +78,9 @@ Global
 		{D0D9A417-2D5A-40CE-B7A3-BB92BF9B7BF7} = {CC658EBC-F838-47D2-8276-186DB1697B6F}
 		{53E2EA24-98FB-499E-A60A-715097330671} = {39F33D54-F75B-40C4-9F7C-0E74FE9210D7}
 		{69D15F33-ED2E-43F1-A837-15A79E7E89ED} = {39F33D54-F75B-40C4-9F7C-0E74FE9210D7}
+		{43EFA1F8-319C-4C50-ADA8-A55EA3237DEF} = {CC658EBC-F838-47D2-8276-186DB1697B6F}
+		{662CED03-7758-41D2-A26A-34444412EED1} = {CC658EBC-F838-47D2-8276-186DB1697B6F}
+		{1D9E54D3-527C-40D7-86DB-14FED6F61C73} = {CC658EBC-F838-47D2-8276-186DB1697B6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E38CD9D3-59CB-4C62-A22A-DC18C5D1BE08}

@@ -13,16 +13,16 @@ public class UserService : IUserService
         new User { Id = 1, FirstName = "Test", LastName = "User", Username = "test", Password = "test" }
     };
 
-    //private readonly ILogger<UserService> _logger;
+    private readonly ILogger<IUserService> _logger;
 
-    //public UserService(ILogger<UserService> logger)
-    //{
-    //    _logger = logger;   
-    //}
-    public UserService()
+    public UserService(ILogger<IUserService> logger)
     {
-        
+        _logger = logger;
     }
+    //public UserService()
+    //{
+        
+    //}
 
     //public AuthenticateResponse? Authenticate(AuthenticateRequest model)
     //{
@@ -39,7 +39,7 @@ public class UserService : IUserService
 
     public User GetUser(string username, string password)
     {
-        //_logger.MyLogMessage(LogLevel.Information, "adfasdfadsfasd");
+        _logger.MyLogMessage(LogLevel.Information, "adfasdfadsfasd");
         var user = _users.SingleOrDefault(x => x.Username == username && x.Password == password);
 
         // return null if user not found

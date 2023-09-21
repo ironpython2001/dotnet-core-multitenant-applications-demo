@@ -10,9 +10,9 @@ namespace Jarvis.TenantServicesProxy;
 
 public class UserService : IUserService
 {
-    private readonly ILogger<UserService> _logger;
+    private readonly ILogger<IUserService> _logger;
 
-    public UserService(ILogger<UserService> logger)
+    public UserService(ILogger<IUserService> logger)
     {
         _logger = logger;
     }
@@ -27,7 +27,7 @@ public class UserService : IUserService
         var className = "Jarvis.SampleTenant1.UserService";
         var requestObjectType = Type.GetType($"{className}, {assemblyName}");
 
-        var args = new object[] { };
+        var args = new object[] { _logger };
         var iUserService = Activator.CreateInstance(requestObjectType!, args) as IUserService;
         var user = iUserService!.GetUser(username, password);
 

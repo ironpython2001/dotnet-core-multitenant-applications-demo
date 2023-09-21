@@ -66,3 +66,20 @@ https://stackoverflow.com/questions/53235472/logging-in-net-core-without-di
 
 how-to-pass-logger-object-while-creating-instance-using-reflection
 https://stackoverflow.com/questions/72109637/how-to-pass-logger-object-while-creating-instance-using-reflection
+
+
+How to invoke C#/.NET namespace in IronPython?
+https://stackoverflow.com/questions/7719397/how-to-invoke-c-net-namespace-in-ironpython
+
+How to load DLL using Iron python?
+https://stackoverflow.com/questions/18427775/how-to-load-dll-using-iron-python
+
+How to add a .Net assembly as reference in IronPython
+https://codeyarns.com/tech/2013-06-07-how-to-add-a-net-assembly-as-reference-in-ironpython.html#gsc.tab=0
+
+
+How do you implement an interface in IronPython?
+https://stackoverflow.com/questions/695986/how-do-you-implement-an-interface-in-ironpython#:~:text=The%20FAQ%20that%20comes%20with,the%20interfaces%20to%20C%23%20code.
+
+can you typecast a .NET object in IronPython?
+https://stackoverflow.com/questions/1439457/can-you-typecast-a-net-object-in-ironpython

@@ -5,6 +5,7 @@ using Microsoft.Scripting.Hosting;
 using System.Reflection;
 using Jarvis.Tenant.BluePrints;
 using System.Text.Encodings.Web;
+using IronPython.Hosting;
 
 namespace Jarvis.TenantServicesProxy;
 
@@ -20,7 +21,13 @@ public class UserService : IUserService
     public User GetUser(string username, string password)
     {
         _logger.MyLogMessage(LogLevel.Information, "adfasdfadsfasd");
+        //return GetUserPy(username, password);
+        return GetUserUsingReflection(username, password);
+    }
 
+
+    private User GetUserUsingReflection(string username, string password)
+    {
         //Jarvis.SampleTenant1.UserService i = new SampleTenant1.UserService(_logger);
 
         var assemblyName = "Jarvis.SampleTenant1";
@@ -36,6 +43,21 @@ public class UserService : IUserService
             return null;
         else
             return user;
+    }
+
+    public dynamic GetUserPy(string username, string password)
+    {
+        var engine = Python.CreateEngine();
+        var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "UserService.py");
+        var source = engine.CreateScriptSourceFromFile(path);
+        var scope = engine.CreateScope();
+        source.Execute(scope);
+        var classUserService = scope.GetVariable("UserService");
+        var userServiceInstance = engine.Operations.CreateInstance(classUserService);
+        dynamic result = userServiceInstance.GetUser(username, password);
+        return result;
+        
+        
     }
 
     public IEnumerable<User> GetAll()

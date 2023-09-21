@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Jarvis.Utils;
 using Jarvis.Tenant.BluePrints;
+using IronPython.Hosting;
 
 namespace Jarvis.SampleTenant1;
 
@@ -40,6 +41,9 @@ public class UserService : IUserService
     public User GetUser(string username, string password)
     {
         _logger.MyLogMessage(LogLevel.Information, "adfasdfadsfasd");
+
+        //GetUserPy(username, password);  
+
         var user = _users.SingleOrDefault(x => x.Username == username && x.Password == password);
 
         // return null if user not found
@@ -47,6 +51,23 @@ public class UserService : IUserService
             return null;
         else
             return user;
+
+
+
+    }
+
+    public void GetUserPy(string username, string password)
+    {
+        var engine = Python.CreateEngine();
+        var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sample.py");
+        var source = engine.CreateScriptSourceFromFile(path);
+        var scope = engine.CreateScope();
+        source.Execute(scope);
+        var classCalculator = scope.GetVariable("calculator");
+        var calculatorInstance = engine.Operations.CreateInstance(classCalculator);
+        Console.WriteLine("From Iron Python");
+        Console.WriteLine("5 + 10 = {0}", calculatorInstance.add(5, 10));
+        Console.WriteLine("5++ = {0}", calculatorInstance.increment(5));
     }
 
     public IEnumerable<User> GetAll()

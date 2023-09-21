@@ -15,4 +15,10 @@
     <ProjectReference Include="..\Jarvis.Tenant.BluePrints\Jarvis.Tenant.BluePrints.csproj" />
     <ProjectReference Include="..\Jarvis.Utils\Jarvis.Utils.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="UserService.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

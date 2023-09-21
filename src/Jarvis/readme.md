@@ -83,3 +83,11 @@ https://stackoverflow.com/questions/695986/how-do-you-implement-an-interface-in-
 
 can you typecast a .NET object in IronPython?
 https://stackoverflow.com/questions/1439457/can-you-typecast-a-net-object-in-ironpython
+
+
+DapperDotNet w/IronPython: How To Handle Returned Result Set?
+https://stackoverflow.com/questions/12845992/dapperdotnet-w-ironpython-how-to-handle-returned-result-set
+
+
+IronPython using Dapper.NET (w/MySql backend and stored procedures)
+https://gist.github.com/WillSams/3873014

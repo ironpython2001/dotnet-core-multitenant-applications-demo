@@ -91,3 +91,6 @@ https://stackoverflow.com/questions/12845992/dapperdotnet-w-ironpython-how-to-ha
 
 IronPython using Dapper.NET (w/MySql backend and stored procedures)
 https://gist.github.com/WillSams/3873014
+
+type-of-an-ironpython-object
+https://stackoverflow.com/questions/45196990/type-of-an-ironpython-object

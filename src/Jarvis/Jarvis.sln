@@ -32,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.BluePrints", "01.BluePri
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Proxies", "02.Proxies", "{718BEDB3-52BF-4CE9-99C3-1A7C098DB086}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Impleentations", "03.Impleentations", "{09DB21C4-0410-4514-8547-210353B389A5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Implementations", "03.Implementations", "{09DB21C4-0410-4514-8547-210353B389A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,7 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jarvis.WebApi", "Jarvis.Web
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71F50A5B-2E43-4A4C-9FE4-2B9FCB5EAD60}"
 	ProjectSection(SolutionItems) = preProject
-		Jarvis.WebApi\Jarvis.WebApi.http = Jarvis.WebApi\Jarvis.WebApi.http
 		readme.md = readme.md
 	EndProjectSection
 EndProject

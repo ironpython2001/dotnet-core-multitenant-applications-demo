@@ -106,3 +106,6 @@ https://gist.github.com/WillSams/3873014
 
 type-of-an-ironpython-object<br/>
 https://stackoverflow.com/questions/45196990/type-of-an-ironpython-object
+
+Tutorial: Create a web API with ASP.NET Core<br/>
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio

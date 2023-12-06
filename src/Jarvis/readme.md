@@ -109,3 +109,6 @@ https://stackoverflow.com/questions/45196990/type-of-an-ironpython-object
 
 Tutorial: Create a web API with ASP.NET Core<br/>
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio
+
+How to use the unit of work pattern in ASP.NET Core<br/>
+https://www.infoworld.com/article/3692811/how-to-use-the-unit-of-work-pattern-in-aspnet-core.html

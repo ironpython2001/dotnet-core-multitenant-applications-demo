@@ -10,9 +10,8 @@ steps to run the application
 
 
 References
-.NET 8: What's New for Authentication and Authorization
+.NET 8: What's New for Authentication and Authorization<br/>
 https://auth0.com/blog/whats-new-dotnet8-authentication-authorization/
-
 
 Implementing JWT Authentication and Authorization in .NET Core Web API
 https://medium.com/@susithapb/implementing-jwt-authentication-and-authorization-in-net-core-web-api-bf438d7ab9a7

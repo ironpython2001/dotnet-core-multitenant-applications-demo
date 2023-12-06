@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="IronPython" Version="3.4.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jarvis.Tenant.BluePrints\Jarvis.Tenant.BluePrints.csproj" />
+    <ProjectReference Include="..\Jarvis.DTOs\Jarvis.DTOs.csproj" />
+    <ProjectReference Include="..\Jarvis.Utils\Jarvis.Utils.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="sample.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

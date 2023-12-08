@@ -1,0 +1,679 @@
+"rawData": {
+            "date": "2023-09-05",
+            "format": "fixed",
+            "case_history": {
+                "chief_complaints": null,
+                "history_of_present_illness": null,
+                "history of past_illness": [
+                    null
+                ],
+                "family_history": null,
+                "surgieries_or_lasers": null,
+                "allergies": null,
+                "current_treatment": null,
+                "personal_history": null,
+                "nutritional_assessment": null,
+                "general_examination": null,
+                "systemic_examination": null,
+                "psychosocial_assessment": "",
+                "imunisation_assessment": "",
+                "growth_assessment": "",
+                "differently_abled": "",
+                "blood_pressure": {
+                    "value": "/",
+                    "unit": "mm/Hg"
+                },
+                "random_blood_sugar": {
+                    "value": null,
+                    "unit": "mg/Dl"
+                },
+                "height": {
+                    "value": null,
+                    "unit": "cm"
+                },
+                "weight": {
+                    "value": null,
+                    "unit": "kg"
+                },
+                "investigation": {
+                    "t3": {
+                        "volume": "",
+                        "date_of_test": "yyyy-MM-dd",
+                        "normal_range": [
+                            "",
+                            ""
+                        ]
+                    },
+                    "t4": {
+                        "volume": "",
+                        "date_of_test": "yyyy-MM-dd",
+                        "normal_range": [
+                            "",
+                            ""
+                        ]
+                    },
+                    "tsh": {
+                        "volume": "",
+                        "date_of_test": "yyyy-MM-dd",
+                        "normal_range": [
+                            "",
+                            ""
+                        ]
+                    }
+                },
+                "tobacco_per_day": "",
+                "smoking_per_day": {
+                    "active": "",
+                    "passive": ""
+                },
+                "obstetrics_history": {
+                    "antenatal": "",
+                    "natal": "",
+                    "postnatal": "",
+                    "pedigree": ""
+                },
+                "illness": {
+                    "description": "",
+                    "onset": "",
+                    "duration": "",
+                    "course": ""
+                }
+            },
+            "review_notes": "Teleconsult by Sunanda\r\nPatient has not uploaded any clinical photographs.\r\npatient's number is switched off\r\n",
+            "plan_of_rx": {
+                "condition_explained": null,
+                "plan_of_mgmt": null,
+                "glasses_advice": null,
+                "impression_note": null
+            },
+            "investigation": null,
+            "refraction": {
+                "folding_foropter": [],
+                "final_subjective_refraction": {
+                    "chart": "",
+                    "remarks": null,
+                    "os": {
+                        "axis": null,
+                        "base_value": "",
+                        "base_orientation": "",
+                        "bcva": null,
+                        "cyl": null,
+                        "prism": "",
+                        "sph": null,
+                        "near_vision": {
+                            "correction": null,
+                            "result": null
+                        }
+                    },
+                    "od": {
+                        "axis": null,
+                        "base_value": "",
+                        "base_orientation": "",
+                        "bcva": null,
+                        "cyl": null,
+                        "prism": "",
+                        "sph": null,
+                        "near_vision": {
+                            "correction": null,
+                            "result": null
+                        }
+                    },
+                    "spectacles_prescribed": {
+                        "remarks": null,
+                        "frame_material": null,
+                        "lens_material": null,
+                        "lens_surface_coating": null,
+                        "lens_tint": null,
+                        "lens_type": null,
+                        "mode_of_wear": null,
+                        "suggestions": "",
+                        "special_instructions": null,
+                        "specialty_lens": "",
+                        "os": {
+                            "axis": null,
+                            "base_value": "",
+                            "base_orientation": "",
+                            "bcva": null,
+                            "cyl": null,
+                            "prism": "",
+                            "sph": null,
+                            "near_vision": {
+                                "correction": null,
+                                "result": null
+                            }
+                        },
+                        "od": {
+                            "axis": null,
+                            "base_value": "",
+                            "base_orientation": "",
+                            "bcva": null,
+                            "cyl": null,
+                            "prism": "",
+                            "sph": null,
+                            "near_vision": {
+                                "correction": null,
+                                "result": null
+                            }
+                        }
+                    }
+                },
+                "spectacles_prescribed": {
+                    "remarks": "",
+                    "frame_material": "",
+                    "lens_material": "",
+                    "lens_surface_coating": "",
+                    "lens_tint": "",
+                    "lens_type": "",
+                    "mode_of_wear": "",
+                    "suggestions": "",
+                    "special_instructions": "",
+                    "specialty_lens": "",
+                    "os": {
+                        "axis": "",
+                        "base_value": "",
+                        "base_orientation": "",
+                        "bcva": "",
+                        "cyl": "",
+                        "prism": "",
+                        "sph": "",
+                        "near_vision": {
+                            "correction": "",
+                            "result": ""
+                        }
+                    },
+                    "od": {
+                        "axis": "",
+                        "base_value": "",
+                        "base_orientation": "",
+                        "bcva": "",
+                        "cyl": "",
+                        "prism": "",
+                        "sph": "",
+                        "near_vision": {
+                            "correction": "",
+                            "result": ""
+                        }
+                    }
+                },
+                "previous_spectacles_prescription": [
+                    {
+                        "remarks": " - ",
+                        "os": {
+                            "axis": null,
+                            "base_value": "",
+                            "base_orientation": "",
+                            "bcva": "",
+                            "cyl": null,
+                            "prism": "",
+                            "sph": null,
+                            "near_vision": {
+                                "value": null,
+                                "nlist": {
+                                    "type": "",
+                                    "value": null
+                                }
+                            }
+                        },
+                        "od": {
+                            "axis": null,
+                            "base_value": "",
+                            "base_orientation": "",
+                            "bcva": "",
+                            "cyl": null,
+                            "prism": "",
+                            "sph": null,
+                            "near_vision": {
+                                "value": null,
+                                "nlist": {
+                                    "type": "",
+                                    "value": null
+                                }
+                            }
+                        }
+                    }
+                ],
+                "visual_acuity": {
+                    "chart_list": null,
+                    "aided": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "amsler_grid": [
+                        {
+                            "eye": "OS",
+                            "value": ""
+                        },
+                        {
+                            "eye": "OD",
+                            "value": ""
+                        }
+                    ],
+                    "aided_by_contact_lens": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "aided_by_spectacles": [
+                        {
+                            "eye": "OS",
+                            "type": null,
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "type": null,
+                            "value": null
+                        }
+                    ],
+                    "colour_vision": [
+                        {
+                            "type": "",
+                            "colour": "",
+                            "eye": "",
+                            "count": 0
+                        }
+                    ],
+                    "miscellaneous": [
+                        {
+                            "eye": "OS",
+                            "value": ""
+                        },
+                        {
+                            "eye": "OD",
+                            "value": ""
+                        }
+                    ],
+                    "near_vision": [
+                        {
+                            "eye": "OS",
+                            "distance": null,
+                            "language": null,
+                            "rs": null,
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "distance": null,
+                            "language": null,
+                            "rs": null,
+                            "value": null
+                        }
+                    ],
+                    "pin_hole": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "stereopsis": "",
+                    "tac": {
+                        "list": "",
+                        "values": [
+                            {
+                                "eye": "OS",
+                                "value": ""
+                            },
+                            {
+                                "eye": "OD",
+                                "value": ""
+                            }
+                        ]
+                    },
+                    "unaided": [
+                        {
+                            "eye": "OS",
+                            "type": null,
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "type": null,
+                            "value": null
+                        }
+                    ]
+                },
+                "retinoscopy": [
+                    {
+                        "cyclo_refraction": "",
+                        "os": {
+                            "axis": null,
+                            "cyl": null,
+                            "sph": null,
+                            "note": null,
+                            "vertical": null,
+                            "horizontal": null,
+                            "angle": null,
+                            "angle1": null,
+                            "list": null
+                        },
+                        "od": {
+                            "axis": null,
+                            "cyl": null,
+                            "sph": null,
+                            "note": null,
+                            "vertical": null,
+                            "horizontal": null,
+                            "angle": null,
+                            "angle1": null,
+                            "list": null
+                        }
+                    }
+                ]
+            },
+            "diagnosis": {
+                "systemic": {
+                    "department": "",
+                    "diagnosis": null,
+                    "appointment_type": ""
+                },
+                "ophthalmic": [
+                    {
+                        "department": "",
+                        "eye": "OD",
+                        "diagnosis": "S/P PK x 2, SFIOL in situ",
+                        "comments": "",
+                        "ICD_Code": "",
+                        "LVP_Code": "",
+                        "type": ""
+                    }
+                ]
+            },
+            "ocular_examination": {
+                "external": {
+                    "facial_symmetry": null,
+                    "forehead": "",
+                    "eyebrows": "",
+                    "external_face": null,
+                    "head_posture": null,
+                    "ocular_position": null,
+                    "ocular_alignment": "",
+                    "ocular_motility": [
+                        {
+                            "eye": "OS",
+                            "value": null,
+                            "position": ""
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null,
+                            "position": ""
+                        }
+                    ]
+                },
+                "slit_lamp": [
+                    {
+                        "eye": "OS",
+                        "eyelids": null,
+                        "conjunctiva": null,
+                        "sclera": null,
+                        "cornea": null,
+                        "anterior_chamber": null,
+                        "iris": null,
+                        "pupil": null
+                    },
+                    {
+                        "eye": "OD",
+                        "eyelids": null,
+                        "conjunctiva": null,
+                        "sclera": null,
+                        "cornea": null,
+                        "anterior_chamber": null,
+                        "iris": null,
+                        "pupil": null
+                    }
+                ],
+                "schirmers_test": [
+                    {
+                        "eye": "OS",
+                        "option": "",
+                        "distance": "",
+                        "duration": "",
+                        "k1": "",
+                        "k2": "",
+                        "avg_al": ""
+                    },
+                    {
+                        "eye": "OD",
+                        "option": "",
+                        "distance": "",
+                        "duration": "",
+                        "k1": "",
+                        "k2": "",
+                        "avg_al": ""
+                    }
+                ],
+                "applanation_tonometry": [
+                    {
+                        "time": null,
+                        "os": {
+                            "value": null,
+                            "medication": null
+                        },
+                        "od": {
+                            "value": null,
+                            "medication": null
+                        }
+                    }
+                ]
+            },
+            "imaging": {
+                "lacrimal_patency": [
+                    {
+                        "watering": "",
+                        "regurgitation": "",
+                        "discharge": "",
+                        "syringing": "",
+                        "eye": "OS"
+                    },
+                    {
+                        "watering": "",
+                        "regurgitation": "",
+                        "discharge": "",
+                        "syringing": "",
+                        "eye": "OD"
+                    }
+                ],
+                "notes": {
+                    "ct_scan": "",
+                    "mri": "",
+                    "x_ray": ""
+                },
+                "fundus_examination": {
+                    "pvd": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "cup_or_disc_ratio": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "macula": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "fundus": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "media": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "optic_disc": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "optic_disc_size": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "diabetic_retinopathy": [
+                        {
+                            "eye": "OS",
+                            "value": ""
+                        },
+                        {
+                            "eye": "OD",
+                            "value": ""
+                        }
+                    ],
+                    "notes": null,
+                    "blood_vessels": [
+                        {
+                            "eye": "OS",
+                            "av_ratio": "",
+                            "arteries": null,
+                            "veins": null
+                        },
+                        {
+                            "eye": "OD",
+                            "av_ratio": "",
+                            "arteries": null,
+                            "veins": null
+                        }
+                    ],
+                    "torsion": {
+                        "option": "",
+                        "encyclotorsion": "",
+                        "excyclotorsion": ""
+                    },
+                    "dilatation": {
+                        "time": "",
+                        "option": ""
+                    }
+                },
+                "post_dilatation_examination": {
+                    "pupil_size": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "anterior_vitreous": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "eye": "OS",
+                            "value": ""
+                        },
+                        {
+                            "eye": "OD",
+                            "value": ""
+                        }
+                    ],
+                    "lens": [
+                        {
+                            "eye": "OS",
+                            "value": null
+                        },
+                        {
+                            "eye": "OD",
+                            "value": null
+                        }
+                    ]
+                }
+            },
+            "gonioscopy": [
+                {
+                    "eye": "OS",
+                    "notes": "",
+                    "non_indentation": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "indentation": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "eye": "OD",
+                    "notes": "",
+                    "non_indentation": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "indentation": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }

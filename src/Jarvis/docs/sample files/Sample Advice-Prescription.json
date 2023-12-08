@@ -1,0 +1,44 @@
+
+        "advice": {
+            "patient_attended": true,
+            "consent_taken": true,
+            "prescription_required": true,
+            "type": "Appointment for physical consultation",
+            "case_history": "Patient complaints of Foreign body sensation and eye strain after wearing spectacles. Slight blurriness of vision also noted.\r\n\r\nAdv:\r\n1. PC to LVPEI or local doctor to check spectacles and retina\r\n2. Lubricating drops",
+            "plan_of_management": "Consultation to LVPEI for refraction and fundus\r\nLubricants",
+            "examination": null,
+            "medication": "medication",
+            "local_consult": null,
+            "provisional_diagnosis": "INTRAOCULAR LENS, PSEUDOPHAKOS(Both Eyes)",
+            "next_visit": {
+                "time": "1 Month(s)",
+                "consultant": {
+                    "name": "Amanjot Kaur",
+                    "email": "amanjot.kaur@lvpei.org",
+                    "department": "cornea"
+                }
+            }
+        },
+        "prescription": {
+            "issued_on": "2023-09-05T09:22:54",
+            "items": [
+                {
+                    "route": "Both Eyes",
+                    "generic_name": "REFRESH TEARS EYE DROPS(Carboxymethyl cellulose (CMC) 0.5 %)",
+                    "taken": null,
+                    "notes": "",
+                    "courses": [
+                        {
+                            "order": 1,
+                            "dosage": {
+                                "value": 1,
+                                "unit": ""
+                            },
+                            "duration": {
+                                "value": 3,
+                                "unit": "Month(s)"
+                            },
+                            "timings": "Four times a day"
+                        }
+                    ]
+                }

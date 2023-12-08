@@ -1,0 +1,1 @@
+where is the tenant field in mockup screens and how to identify tenant for the logged in user

@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "027da8f4-bd31-414a-843b-889c6ad26b84",
+		"name": "Cerebro-Server",
+		"description": "Cerebro Back-end Server: This contains APIs additional to the EMR APIs for managing printer list, device profile, analytics & builds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "APIs",
+			"item": [
+				{
+					"name": "Device Profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cerebro/device-profiles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cerebro",
+								"device-profiles"
+							]
+						},
+						"description": "Returns the list of device profiles"
+					},
+					"response": []
+				},
+				{
+					"name": "Printers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cerebro/printers",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cerebro",
+								"printers"
+							]
+						},
+						"description": "Returns the lists of available Printers"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Build",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cerebro/builds?package=com.algoleap.lvpei.cerebro&type=debug&version=4.0.0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cerebro",
+								"builds"
+							],
+							"query": [
+								{
+									"key": "package",
+									"value": "com.algoleap.lvpei.cerebro"
+								},
+								{
+									"key": "type",
+									"value": "debug"
+								},
+								{
+									"key": "version",
+									"value": "4.0.0"
+								}
+							]
+						},
+						"description": "Returns the cerebro app build (apk) based on the given parameters. This API is being called int he home screen of the apps for latest build check and in-app update."
+					},
+					"response": []
+				},
+				{
+					"name": "Analytics",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"date\": \"2021-12-04 15:23:06.574\",\"device_id\": \"ZY32284LRX\",\"device_tag\": \"Cataract 1\",\"device_type\": \"T\",\n\"campus\": \"KARMN\",\"dept\": \"PED\",\"visit\": \"GFU\",\"mrno\": \"P1196353\",\"appt_id\": \"2918937\",\n\"checkin_status\": \"PAYMENT_FAIL\",\"payment_status\": \"PAYMENT_FAIL\",\"payment_type\": \"GPay\",\n\"amount\": 350,\"app_version\": \"3.0.11\",\"note\": \"Payment Cancelled\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cerebro/analytics",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cerebro",
+								"analytics"
+							]
+						},
+						"description": "Sends the appointments transaction details to the cerebro MS SQL DB."
+					},
+					"response": []
+				}
+			],
+			"description": "APIs consumed by the Cerebro apps"
+		},
+		{
+			"name": "Upload Builds",
+			"item": [
+				{
+					"name": "Prod",
+					"item": [
+						{
+							"name": "Upload Build Prod T",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Cerebro",
+											"type": "text"
+										},
+										{
+											"key": "package",
+											"value": "com.algoleap.lvpei.cerebro",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "release",
+											"type": "text"
+										},
+										{
+											"key": "version_code",
+											"value": "27",
+											"type": "text"
+										},
+										{
+											"key": "version",
+											"value": "4.0.2",
+											"type": "text"
+										},
+										{
+											"key": "build",
+											"type": "file",
+											"src": "/home/ashis/Projects/Projs/Cerebro/cerebro-android/app/build/outputs/apk/release/Cerebro_v4.0.2_Prod_2022-03-05.apk"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/cerebro/builds",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"cerebro",
+										"builds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload Build Prod M",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Cerebro_Mobile",
+											"type": "text"
+										},
+										{
+											"key": "package",
+											"value": "com.algoleap.lvpei.cerebro.security",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "release",
+											"type": "text"
+										},
+										{
+											"key": "version_code",
+											"value": "27",
+											"type": "text"
+										},
+										{
+											"key": "version",
+											"value": "4.0.2",
+											"type": "text"
+										},
+										{
+											"key": "build",
+											"type": "file",
+											"src": "/home/ashis/Projects/Projs/Cerebro/cerebro-android/security/build/outputs/apk/release/Cerebro_Mobile_v4.0.2_Prod_2022-03-05.apk"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/cerebro/builds",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"cerebro",
+										"builds"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Test",
+					"item": [
+						{
+							"name": "Upload Build Test T",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Cerebro",
+											"type": "text"
+										},
+										{
+											"key": "package",
+											"value": "com.algoleap.lvpei.cerebro",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "debug",
+											"type": "text"
+										},
+										{
+											"key": "version_code",
+											"value": "27",
+											"type": "text"
+										},
+										{
+											"key": "version",
+											"value": "4.0.2",
+											"type": "text"
+										},
+										{
+											"key": "build",
+											"type": "file",
+											"src": "/home/ashis/Projects/Projs/Cerebro/cerebro-android/app/build/outputs/apk/debug/Cerebro_v4.0.2_Test_2022-03-05.apk"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/cerebro/builds",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"cerebro",
+										"builds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload Build Test M",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Cerebro_Mobile",
+											"type": "text"
+										},
+										{
+											"key": "package",
+											"value": "com.algoleap.lvpei.cerebro.security",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "debug",
+											"type": "text"
+										},
+										{
+											"key": "version_code",
+											"value": "27",
+											"type": "text"
+										},
+										{
+											"key": "version",
+											"value": "4.0.2",
+											"type": "text"
+										},
+										{
+											"key": "build",
+											"type": "file",
+											"src": "/home/ashis/Projects/Projs/Cerebro/cerebro-android/security/build/outputs/apk/debug/Cerebro_Mobile_v4.0.2_Test_2022-03-05.apk"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/cerebro/builds",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"cerebro",
+										"builds"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "Upload builds (APKs) to Cerebro server."
+		}
+	]
+}
